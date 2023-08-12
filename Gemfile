@@ -44,4 +44,7 @@ end
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
+  gem "debase", "~> 0.2.5.beta2", require: false
+  gem "ruby-debug-ide", "~> 0.7.3", require: false
 end

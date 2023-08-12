@@ -72,6 +72,9 @@ GEM
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.3)
+    debase (0.2.5.beta2)
+      debase-ruby_core_source (>= 0.10.12)
+    debase-ruby_core_source (3.2.1)
     debug (1.8.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
@@ -148,6 +151,8 @@ GEM
     rake (13.0.6)
     reline (0.3.7)
       io-console (~> 0.5)
+    ruby-debug-ide (0.7.3)
+      rake (>= 0.8.1)
     thor (1.2.2)
     timeout (0.4.0)
     tzinfo (2.0.6)
@@ -162,10 +167,12 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  debase (~> 0.2.5.beta2)
   debug
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.6)
+  ruby-debug-ide (~> 0.7.3)
   tzinfo-data
 
 RUBY VERSION
