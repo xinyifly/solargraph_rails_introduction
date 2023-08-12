@@ -605,6 +605,17 @@
     };
     version = "0.3.7";
   };
+  rspec = {
+    dependencies = ["rspec-core" "rspec-expectations" "rspec-mocks"];
+    groups = ["default" "development" "test"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "171rc90vcgjl8p1bdrqa92ymrj8a87qf6w20x05xq29mljcigi6c";
+      type = "gem";
+    };
+    version = "3.12.0";
+  };
   rspec-core = {
     dependencies = ["rspec-support"];
     groups = ["default" "development" "test"];
@@ -626,6 +637,17 @@
       type = "gem";
     };
     version = "3.12.3";
+  };
+  rspec-has = {
+    dependencies = ["rspec"];
+    groups = ["development" "test"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "0n117z560a092d7plkgxl006gddmzg0kswspi4ai73gg8x306bcv";
+      type = "gem";
+    };
+    version = "0.1.1";
   };
   rspec-mocks = {
     dependencies = ["diff-lcs" "rspec-support"];
