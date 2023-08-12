@@ -275,6 +275,16 @@
     };
     version = "1.1.0";
   };
+  graphql = {
+    groups = ["default"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "0j5y4zgvraq5jhs2jjrblarj93nhq94m7bk8k1cqk18nq985x5ac";
+      type = "gem";
+    };
+    version = "2.0.26";
+  };
   i18n = {
     dependencies = ["concurrent-ruby"];
     groups = ["default"];
