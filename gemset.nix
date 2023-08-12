@@ -211,6 +211,16 @@
     };
     version = "1.8.0";
   };
+  diff-lcs = {
+    groups = ["default" "development" "test"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "0rwvjahnp7cpmracd8x732rjgnilqv2sx7d1gfrysslc3h039fa9";
+      type = "gem";
+    };
+    version = "1.5.0";
+  };
   erubi = {
     groups = ["default"];
     platforms = [];
@@ -551,6 +561,60 @@
       type = "gem";
     };
     version = "0.3.7";
+  };
+  rspec-core = {
+    dependencies = ["rspec-support"];
+    groups = ["default" "development" "test"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "0l95bnjxdabrn79hwdhn2q1n7mn26pj7y1w5660v5qi81x458nqm";
+      type = "gem";
+    };
+    version = "3.12.2";
+  };
+  rspec-expectations = {
+    dependencies = ["diff-lcs" "rspec-support"];
+    groups = ["default" "development" "test"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "05j44jfqlv7j2rpxb5vqzf9hfv7w8ba46wwgxwcwd8p0wzi1hg89";
+      type = "gem";
+    };
+    version = "3.12.3";
+  };
+  rspec-mocks = {
+    dependencies = ["diff-lcs" "rspec-support"];
+    groups = ["default" "development" "test"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "1gq7gviwpck7fhp4y5ibljljvxgjklza18j62qf6zkm2icaa8lfy";
+      type = "gem";
+    };
+    version = "3.12.6";
+  };
+  rspec-rails = {
+    dependencies = ["actionpack" "activesupport" "railties" "rspec-core" "rspec-expectations" "rspec-mocks" "rspec-support"];
+    groups = ["development" "test"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "086qdyz7c4s5dslm6j06mq7j4jmj958whc3yinhabnqqmz7i463d";
+      type = "gem";
+    };
+    version = "6.0.3";
+  };
+  rspec-support = {
+    groups = ["default" "development" "test"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "1ky86j3ksi26ng9ybd7j0qsdf1lpr8mzrmn98yy9gzv801fvhsgr";
+      type = "gem";
+    };
+    version = "3.12.1";
   };
   ruby-debug-ide = {
     dependencies = ["rake"];
