@@ -8,4 +8,20 @@ RSpec.describe Feeder do
 
     it { has.to change { described_class.count }.by(1) }
   end
+
+  describe "#food" do
+    subject { feeder.food }
+
+    let(:feeder) { create(:feeder, registers: { 1 => 78 }) }
+
+    it { is_expected.to eq 78 }
+  end
+
+  describe "#water" do
+    subject { feeder.water }
+
+    let(:feeder) { create(:feeder, registers: { 2 => 52 }) }
+
+    it { is_expected.to eq 52 }
+  end
 end
