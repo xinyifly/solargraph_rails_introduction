@@ -10,9 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_12_151947) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_13_035648) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "devices", force: :cascade do |t|
+    t.string "type", null: false
+    t.bigint "house_id", null: false
+    t.jsonb "modbus", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["house_id"], name: "index_devices_on_house_id"
+  end
 
   create_table "houses", force: :cascade do |t|
     t.string "name", null: false
@@ -21,4 +30,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_12_151947) do
     t.index ["name"], name: "index_houses_on_name", unique: true
   end
 
+  add_foreign_key "devices", "houses"
 end
