@@ -54,4 +54,6 @@ group :development do
 
   gem "debase", "~> 0.2.5.beta2", require: false
   gem "ruby-debug-ide", "~> 0.7.3", require: false
+
+  gem "solargraph-rails", "~> 1.1", require: false
 end
