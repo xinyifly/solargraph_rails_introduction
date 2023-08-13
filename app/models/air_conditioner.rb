@@ -1,0 +1,2 @@
+class AirConditioner < Device
+end
